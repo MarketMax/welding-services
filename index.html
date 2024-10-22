@@ -51,9 +51,9 @@
             color: #FFD700;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
+            margin-top: 20px; /* Добавлено для расстояния от контента */
         }
 
         .gallery img {
@@ -61,6 +61,10 @@
             height: auto;
             margin: 10px;
             border: 2px solid #FFD700;
+        }
+
+        .contact-info {
+            margin-bottom: 40px; /* Пространство между контактами и футером */
         }
     </style>
 </head>
@@ -95,9 +99,11 @@
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>For inquiries or a free quote, reach out to us:</p>
-    <p>Email: johnwelding@example.com</p>
-    <p>Phone: +44 1234 567890</p>
+    <div class="contact-info">
+        <p>For inquiries or a free quote, reach out to us:</p>
+        <p>Email: <a href="mailto:johnwelding@example.com" style="color:#FFD700;">johnwelding@example.com</a></p>
+        <p>Phone: <a href="tel:+441234567890" style="color:#FFD700;">+44 1234 567890</a></p>
+    </div>
 </section>
 
 <footer>
